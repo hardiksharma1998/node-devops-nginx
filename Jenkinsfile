@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/yourname/node-devops-nginx.git'
+                    url: 'https://github.com/hardiksharma1998/node-devops-nginx.git'
             }
         }
 
