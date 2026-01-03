@@ -23,7 +23,8 @@ pipeline {
             steps {
                 sh '''
                 docker rm -f node-app || true
-                docker run -d --name node-app $APP_IMAGE
+                docker run -d -p -p 3000:3000 --name node-app $APP_IMAGE
+
                 '''
             }
         }
